@@ -1,0 +1,47 @@
+.dashboardCard {
+  padding-top: 20px;
+  margin-left: 40px;
+  height: 217px;
+  width: 433px;
+  border-radius: 7px;
+  background-color:$white;
+  box-shadow: 0 2px 14px 0 rgba(220, 220, 220, 0.5);
+  .project-txt {
+    color: $projectTxtColor;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 36px;
+  }
+  .project-helpertxt {
+    color: $projectTxtColor;
+    font-size: 14px;
+    line-height: 15px;
+  }
+  .enabled {
+    color: $enabled;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 70px;
+  }
+  .edge-bg {
+    background-color: #c6faed;
+    box-shadow: 0 2px 14px 0 rgba(84, 187, 173, 0.5);
+  }
+  .edge-nodes-app {
+    margin-right: 20px;
+    color: $edgeTxtColor;
+    font-size: 16px;
+    line-height: 55px;
+    font-size: 20px;
+  }
+  .node-app {
+    color: $edgeNumColor;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 36px;
+    margin-bottom: 15px;
+  }
+  .status-icon {
+    font-size: 20px;
+  }
+}

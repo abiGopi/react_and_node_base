@@ -24,7 +24,8 @@ class AuthComponentWrapper extends React.Component<any, { hasError: boolean }> {
         return (
             <React.Fragment>
                 <div className={`auth-container ${this.props.color}`} data-testid="auth-container">
-                    <div className="container-fluid page-body-wrapper">
+                    {/* <div className="container-fluid page-body-wrapper"> */}
+                    <div className="page-body-wrapper">
                         {this.props?.children || null}
                     </div>
                 </div>

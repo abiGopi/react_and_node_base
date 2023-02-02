@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Varela+Round&display=swap');
-
+@import url('https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css');
 // Base color codes
 $blue: #526fd6;
 $light-blue: #e0e5f8;
@@ -8,11 +8,15 @@ $white: #ffffff;
 $black: #000000;
 $textColorDefault: #000000;
 $textColor1: #313131;
+$projectTxtColor:#3d4859;
+$enabled: #089d96;
+$edgeTxtColor: #707070;
+$edgeNumColor:#06746f;
 
 
 /* ----- TODO update the below item with requirement ----- */
 // Font family declarations
-$font-default: 'Roboto', sans-serif;
+$font-default: 'Source Sans Pro';
 $font-optional: 'Varela Round', sans-serif;
 
 
@@ -44,3 +48,7 @@ $mq-retina: "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)";
 @import './pages/login.scss';
 @import './pages/dashboard.scss';
 @import './pages/pageNotFound.scss';
+
+/* =======----------- components Styles are must be imported here --------============ */
+@import './components/header.scss';
+@import './components/dashboardCard.scss';
