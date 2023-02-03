@@ -2,29 +2,39 @@ import React from 'react'
 import { IDashboardCardInterface } from '@Utils/interface/ComponentInterface/DashboardCardInterface'
 const dashboardCard: React.FC<IDashboardCardInterface> = props => {
   return (
-    <div className="d-flex ">
+    <div className="card-container px-5 pt-4">
       {props.projectDetails?.map(data => {
+        const status =
+          data.projectStatus === 'Enabled' ? 'status-enable' : 'status-disable'
         return (
-          <div className="dashboardCard">
-            <div className="d-flex align-items-center px-4">
-              <i className="fa fa-circle status-icon"></i>
-              <div className="project-txt px-2">{data.projectName}</div>
-            </div>
-            <div className="project-helpertxt px-4">{data.projectType}</div>
-            <div className="enabled px-4">{data.projectStatus}</div>
-            <div className="d-flex align-items-center justify-content-between edge-bg px-4">
-              <div>
-                <div className="edge-nodes-app">Edge Node</div>
-                <div className="d-flex">
-                  <i className="fa fa-desktop status-icon py-3"></i>
-                  <div className="node-app px-4">60</div>
-                </div>
+          <div className="dashboardCard rounded">
+            <div className={`${status}`}>
+              <div className={`d-flex align-items-center px-4 pt-4`}>
+                <i className="fa fa-circle status-icon"></i>
+                <div className="project-txt px-2">{data.projectName}</div>
               </div>
-              <div>
-                <div className="edge-nodes-app">Edge App Instances</div>
-                <div className="d-flex">
-                  <i className="fa fa-hand-o-up status-icon py-3"></i>
-                  <div className="node-app  px-4">80</div>
+              <div className="project-helpertxt px-4">{data.projectType}</div>
+              <div className={`enabled px-4`}>
+                {data.projectStatus}
+              </div>
+              <div className="d-flex align-items-center">
+                <div className={` edge-app-color col-6 `}>
+                  <div className={`edge-app-color edge-nodes-app px-4 pt-2`}>
+                    Edge Node
+                  </div>
+                  <div className="d-flex px-4 edge-app-color align-items-center">
+                    <i className={`status-icon fa fa-desktop py-3`}></i>
+                    <div className={`node-count node-app fw-bold px-4`}>60</div>
+                  </div>
+                </div>
+                <div className={`edge-node-color col-6`}>
+                  <div className={`edge-node-color edge-nodes-app px-4 pt-2`}>
+                    Edge App Instances
+                  </div>
+                  <div className="d-flex px-4 edge-node-color align-items-center">
+                    <i className={`fa fa-hand-o-up status-icon py-3`}></i>
+                    <div className={`node-count node-app fw-bold px-4`}>80</div>
+                  </div>
                 </div>
               </div>
             </div>

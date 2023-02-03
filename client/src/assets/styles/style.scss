@@ -12,6 +12,8 @@ $projectTxtColor:#3d4859;
 $enabled: #089d96;
 $edgeTxtColor: #707070;
 $edgeNumColor:#06746f;
+$descriptiveTxtColor:#3d4859;
+$dashboardBG:#ece7e7;
 
 
 /* ----- TODO update the below item with requirement ----- */
@@ -52,3 +54,4 @@ $mq-retina: "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)";
 /* =======----------- components Styles are must be imported here --------============ */
 @import './components/header.scss';
 @import './components/dashboardCard.scss';
+@import './components/dropDown.scss';

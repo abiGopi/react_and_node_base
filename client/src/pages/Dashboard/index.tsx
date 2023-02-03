@@ -7,6 +7,7 @@ import { IS_USER_AUTHENTICATED } from '@Utils/storage'
 import { fetchUsers, updateUser, deleteUser } from '@Reducers/index'
 import Header from '@Components/Header/header'
 import DashboardCard from '@Components/DashboardCard/DashboardCard'
+import DropDown from '@Components/DropDown/DropDown'
 const dummyData = [
   {
     projectName: 'Coimbatore',
@@ -36,6 +37,7 @@ const DashboardComponent: React.FC<IDefaultPageProps> = props => {
   return (
     <div className="dashboard-page-main-container">
       <Header userName={'Peter'} handleLogout={onLogout} />
+      <DropDown/>
       <DashboardCard projectDetails={dummyData} />
     </div>
   )

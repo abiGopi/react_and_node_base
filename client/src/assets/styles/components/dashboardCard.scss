@@ -1,47 +1,67 @@
 .dashboardCard {
-  padding-top: 20px;
-  margin-left: 40px;
-  height: 217px;
+  margin-top: 4rem;
   width: 433px;
   border-radius: 7px;
-  background-color:$white;
+  background-color: $white;
   box-shadow: 0 2px 14px 0 rgba(220, 220, 220, 0.5);
   .project-txt {
     color: $projectTxtColor;
     font-size: 28px;
     font-weight: bold;
-    line-height: 36px;
   }
   .project-helpertxt {
     color: $projectTxtColor;
     font-size: 14px;
-    line-height: 15px;
   }
   .enabled {
-    color: $enabled;
+    padding-top: 20px;
     font-size: 28px;
     font-weight: bold;
-    line-height: 70px;
-  }
-  .edge-bg {
-    background-color: #c6faed;
-    box-shadow: 0 2px 14px 0 rgba(84, 187, 173, 0.5);
+    padding-bottom: 20px;
   }
   .edge-nodes-app {
-    margin-right: 20px;
-    color: $edgeTxtColor;
+    color: #707070;
     font-size: 16px;
-    line-height: 55px;
-    font-size: 20px;
   }
   .node-app {
-    color: $edgeNumColor;
     font-size: 22px;
     font-weight: bold;
-    line-height: 36px;
-    margin-bottom: 15px;
   }
   .status-icon {
     font-size: 20px;
+  }
+  .status-enable {
+    .edge-app-color {
+      background-color: #d5f3e9;
+    }
+    .edge-node-color {
+      background-color: #a4d1c7;
+    }
+    .status-icon {
+      color: $enabled;
+    }
+    .node-count {
+      color: $edgeNumColor;
+    }
+    .enabled {
+      color: $enabled;
+    }
+  }
+  .status-disable {
+    .edge-app-color {
+      background-color: #dde0e0;
+    }
+    .edge-node-color {
+      background-color: #bdc0bf;
+    }
+    .status-icon {
+      color: #aca8c1;
+    }
+    .node-count {
+      color:$black;
+    }
+    .enabled {
+      color: #aca8c1;
+    }
   }
 }

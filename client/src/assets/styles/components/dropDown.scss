@@ -1,0 +1,24 @@
+.dropDownContainer {
+  height: 107px;
+  width: 1348px;
+  .cardborder {
+    background-color: $white;
+    border-radius: 7px;
+    box-shadow: 0 2px 14px 0 rgba(220, 220, 220, 0.5);
+  }
+  .descriptive-insights {
+    color: $descriptiveTxtColor;
+    font-size: 17px;
+    font-weight: 900;
+    line-height: 22px;
+  }
+  .descriptive-helpertxt {
+    height: 51px;
+    width: 1286px;
+    font-size: 15px;
+    letter-spacing: 0;
+    line-height: 19px;
+    color: $descriptiveTxtColor;
+    margin-bottom: 20px;
+  }
+}
