@@ -1,3 +1,8 @@
+export interface ISearchData {
+  projectName: string
+  projectStatus: string
+  projectType: string
+}
 export interface IDashboardCardInterface {
-    projectDetails:"{ projectName: string; projectStatus: string; projectType: string; }[]"
-  }
+  projectDetails: ISearchData[]
+}

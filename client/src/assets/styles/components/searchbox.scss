@@ -1,0 +1,10 @@
+.search-box {
+  width: 316px;
+  .search-icon{
+    color:$grey;
+    position: absolute;
+    top:6px;
+    right:15px;
+    z-index: 999;
+  }
+}

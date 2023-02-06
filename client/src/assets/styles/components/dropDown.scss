@@ -1,10 +1,10 @@
 .dropDownContainer {
-  height: 107px;
-  width: 1348px;
+  padding-right: 46px;
+  padding-left: 46px;
   .cardborder {
     background-color: $white;
     border-radius: 7px;
-    box-shadow: 0 2px 14px 0 rgba(220, 220, 220, 0.5);
+    box-shadow: $dashboardBoxShadow 
   }
   .descriptive-insights {
     color: $descriptiveTxtColor;

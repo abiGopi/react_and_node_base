@@ -1,13 +1,13 @@
 import React, { useState } from 'react'
-import { IHeaderInterface } from '@Utils/interface/ComponentInterface/HeaderInterface'
-const DropDown: React.FC<IHeaderInterface> = props => {
-  const [show, setShow] = useState(false)
+import { IDropDownInterface } from '@Utils/interface/ComponentInterface/DropDownInterface'
+const DropDown: React.FC<IDropDownInterface> = props => {
+  const [show, setShow] = useState<boolean>(false)
   const handleCollapse = () => {
     setShow(!show)
   }
   const showContent = show ? 'show' : ''
   return (
-    <div id="accordion" className="dropDownContainer px-5 py-5">
+    <div id="accordion" className="dropDownContainer py-3">
       <div className="card cardborder">
         <div className="" id="headingOne">
           <div className="descriptive-insights d-flex justify-content-between mb-0 px-3 py-3">
@@ -38,7 +38,7 @@ const DropDown: React.FC<IHeaderInterface> = props => {
             quae ab illo inventore veritatis et quasi architecto beatae vitae
             dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
             aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
-            eos qui ratione voluptatem sequi nesciunt.{' '}
+            eos qui ratione voluptatem sequi nesciunt.
           </div>
         </div>
       </div>

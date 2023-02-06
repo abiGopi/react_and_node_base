@@ -1,9 +1,7 @@
 .dashboardCard {
-  margin-top: 4rem;
-  width: 433px;
   border-radius: 7px;
   background-color: $white;
-  box-shadow: 0 2px 14px 0 rgba(220, 220, 220, 0.5);
+  box-shadow:  $dashboardBoxShadow ;
   .project-txt {
     color: $projectTxtColor;
     font-size: 28px;
@@ -20,7 +18,7 @@
     padding-bottom: 20px;
   }
   .edge-nodes-app {
-    color: #707070;
+    color: $edgeNodeAppBg;
     font-size: 16px;
   }
   .node-app {
@@ -32,10 +30,10 @@
   }
   .status-enable {
     .edge-app-color {
-      background-color: #d5f3e9;
+      background-color:$edgeAppBgEnable
     }
     .edge-node-color {
-      background-color: #a4d1c7;
+      background-color: $edgeNodeBgEnable
     }
     .status-icon {
       color: $enabled;
@@ -49,19 +47,19 @@
   }
   .status-disable {
     .edge-app-color {
-      background-color: #dde0e0;
+      background-color: $edgeAppBgDisable
     }
     .edge-node-color {
-      background-color: #bdc0bf;
+      background-color:$edgeNodeBgDisable
     }
     .status-icon {
-      color: #aca8c1;
+      color: $statusIconColor;
     }
     .node-count {
-      color:$black;
+      color: $black;
     }
     .enabled {
-      color: #aca8c1;
+      color: $statusIconColor;
     }
   }
 }

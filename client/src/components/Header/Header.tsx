@@ -2,7 +2,7 @@ import React from 'react'
 import { IHeaderInterface } from '@Utils/interface/ComponentInterface/HeaderInterface'
 const Header: React.FC<IHeaderInterface> = props => {
   return (
-    <div className="header-section d-flex py-4 px-5 align-items-center justify-content-between">
+    <div className="header-section d-flex py-4 align-items-center justify-content-between">
       <h4 className="mb-0 fw-bold text-white">RAA</h4>
       <div className="d-flex align-items-center text-white">
         <p className="mb-0 fw-bold fs-12">Welcome, {props.userName}</p>
